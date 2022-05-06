@@ -2,7 +2,7 @@ from airflow import DAG
 from datetime import datetime, timedelta
 from airflow.operators.python import PythonOperator
 
-from test_collation.do_something import do_something
+import do_something
 
 default_args = {
     'owner': 'tri',
